@@ -41,8 +41,8 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
         http.csrf()
                 .disable()
                 .exceptionHandling()
-                .authenticationEntryPoint(new Http403ForbiddenEntryPoint() {
-                })
+                // .authenticationEntryPoint(new Http403ForbiddenEntryPoint() {
+                // })
                 .and()
                 .authenticationProvider(getProvider())
                 .formLogin()
